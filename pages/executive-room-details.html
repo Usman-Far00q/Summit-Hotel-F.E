@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Details - Summit Hotel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/bedroom-detail-styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar-placeholder"></div>
+    <div class="container container-medium room-details" id="top-div-id">
+      <div class="row row-2">
+        <h2>Executive Suite</h2>
+      </div>
+      <div class="container big-gallery">
+        <div class="main-grid">
+          <img
+            src="../images/rooms/executive room/pic1.jpeg"
+            alt="Main Image"
+            onclick="openLightbox(0)"
+            class="main-img"
+          />
+          <div class="right-column">
+            <img
+              src="../images/rooms/executive room/pic2.jpeg"
+              alt="Room 2"
+              onclick="openLightbox(1)"
+              class="side-img"
+            />
+            <img
+              src="../images/rooms/executive room/pic3.jpeg"
+              alt="Room 3"
+              onclick="openLightbox(2)"
+              class="side-img"
+            />
+            <img
+              src="../images/rooms/executive room/pic4.jpeg"
+              alt="Room 4"
+              onclick="openLightbox(3)"
+              class="side-img"
+            />
+          </div>
+        </div>
+
+        <div class="thumbnail-strip">
+          <img
+            src="../images/rooms/executive room/pic5.jpeg"
+            alt="Room 5"
+            onclick="openLightbox(4)"
+          />
+          <img
+            src="../images/rooms/executive room/pic6.jpeg"
+            alt="Room 6"
+            onclick="openLightbox(5)"
+          />
+          <img
+            src="../images/rooms/executive room/pic7.jpeg"
+            alt="Room 7"
+            onclick="openLightbox(6)"
+          />
+          <img
+            src="../images/rooms/executive room/pic8.jpeg"
+            alt="Room 8"
+            onclick="openLightbox(7)"
+          />
+          <img
+            src="../images/rooms/executive room/pic9.jpeg"
+            alt="Room 9"
+            onclick="openLightbox(8)"
+          />
+          <img
+            src="../images/rooms/executive room/pic10.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(9)"
+          />
+          <img
+            src="../images/rooms/executive room/pic11.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(10)"
+          />
+          <img
+            src="../images/rooms/executive room/pic12.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(11)"
+          />
+          <img
+            src="../images/rooms/executive room/pic13.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(12)"
+          />
+          <img
+            src="../images/rooms/executive room/pic14.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(13)"
+          />
+          <img
+            src="../images/rooms/executive room/pic15.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(14)"
+          />
+          <img
+            src="../images/rooms/executive room/pic16.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(15)"
+          />
+          <img
+            src="../images/rooms/executive room/pic17.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(16)"
+          />
+          <img
+            src="../images/rooms/executive room/pic18.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(17)"
+          />
+          <img
+            src="../images/rooms/executive room/pic19.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(18)"
+          />
+          <img
+            src="../images/rooms/executive room/pic20.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(19)"
+          />
+          <img
+            src="../images/rooms/executive room/pic21.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(20)"
+          />
+          <img
+            src="../images/rooms/executive room/pic22.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(21)"
+          />
+          <img
+            src="../images/rooms/executive room/pic23.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(22)"
+          />
+          <img
+            src="../images/rooms/executive room/pic24.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(23)"
+          />
+          <img
+            src="../images/rooms/executive room/pic25.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(24)"
+          />
+          <img
+            src="../images/rooms/executive room/pic26.jpeg"
+            alt="Room 10"
+            onclick="openLightbox(25)"
+          />
+        </div>
+      </div>
+
+      <!-- Lightbox Gallery -->
+      <div class="lightbox" id="lightbox">
+        <a class="lightbox-close" onclick="closeLightbox()">&times;</a>
+        <img id="lightbox-img" src="" alt="Enlarged Image" />
+        <div class="lightbox-thumbs" id="lightbox-thumbs"></div>
+      </div>
+      <div>
+        <div class="row row-2">
+          <h2>Description</h2>
+          <p>
+            This well-appointed room features one double bed and one single bed,
+            with ample space to comfortably add two floor mattresses. One
+            mattress is complimentary; a second can be provided upon request at
+            an additional charge. The room includes a private attached bathroom,
+            accessible only to the guests of the room, and is equipped with
+            round-the-clock hot water and complimentary amenities such as
+            shampoo and dental kits. Uninterrupted electricity is ensured,
+            supported by a backup generator for added reliability.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="../js/footer-and-nav-load.js"></script>
+    <script>
+      const imagePaths = [
+        "../images/rooms/executive room/pic1.jpeg",
+        "../images/rooms/executive room/pic2.jpeg",
+        "../images/rooms/executive room/pic3.jpeg",
+        "../images/rooms/executive room/pic4.jpeg",
+        "../images/rooms/executive room/pic5.jpeg",
+        "../images/rooms/executive room/pic6.jpeg",
+        "../images/rooms/executive room/pic7.jpeg",
+        "../images/rooms/executive room/pic8.jpeg",
+        "../images/rooms/executive room/pic9.jpeg",
+        "../images/rooms/executive room/pic10.jpeg",
+        "../images/rooms/executive room/pic11.jpeg",
+        "../images/rooms/executive room/pic12.jpeg",
+        "../images/rooms/executive room/pic13.jpeg",
+        "../images/rooms/executive room/pic14.jpeg",
+        "../images/rooms/executive room/pic15.jpeg",
+        "../images/rooms/executive room/pic16.jpeg",
+        "../images/rooms/executive room/pic17.jpeg",
+        "../images/rooms/executive room/pic18.jpeg",
+        "../images/rooms/executive room/pic19.jpeg",
+        "../images/rooms/executive room/pic20.jpeg",
+        "../images/rooms/executive room/pic21.jpeg",
+        "../images/rooms/executive room/pic22.jpeg",
+        "../images/rooms/executive room/pic23.jpeg",
+        "../images/rooms/executive room/pic24.jpeg",
+        "../images/rooms/executive room/pic25.jpeg",
+        "../images/rooms/executive room/pic26.jpeg",
+      ];
+
+      let currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        document.getElementById("lightbox-img").src = imagePaths[index];
+        document.getElementById("lightbox").style.display = "flex";
+        populateThumbnails();
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+
+      function populateThumbnails() {
+        const container = document.getElementById("lightbox-thumbs");
+        container.innerHTML = "";
+        imagePaths.forEach((src, i) => {
+          const thumb = document.createElement("img");
+          thumb.src = src;
+          if (i === currentIndex) thumb.classList.add("active");
+          thumb.onclick = () => {
+            document.getElementById("lightbox-img").src = src;
+            currentIndex = i;
+            populateThumbnails();
+          };
+          container.appendChild(thumb);
+        });
+      }
+
+      // Close on ESC key
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
+  </body>
+</html>

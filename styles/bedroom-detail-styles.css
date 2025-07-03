@@ -1,0 +1,110 @@
+/* BASIC STYLES */
+
+body {
+  background-color: var(--white-pinkish-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--main-font-1);
+  scroll-behavior: smooth;
+}
+
+.room-details {
+  color: var(--main-color);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.main-img {
+  width: 100%;
+  height: 47rem;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.side-img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.right-column {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.thumbnail-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.thumbnail-strip img {
+  height: 80px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.lightbox-close {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lightbox-thumbs {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  max-width: 90%;
+  overflow-x: auto;
+}
+
+.lightbox-thumbs img {
+  height: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.lightbox-thumbs img.active {
+  border: 2px solid white;
+  opacity: 1;
+}
